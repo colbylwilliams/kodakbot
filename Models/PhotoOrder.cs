@@ -13,16 +13,16 @@ namespace KodakBot
     public class PhotoOrder
     {
 
-        [Prompt("\nWhat can I help you with? {||}")]
+        [Prompt("\nWhat can I help you with? {||}", ChoiceFormat = "{0}", ChoiceCase = CaseNormalization.Lower)]
         public OrderOptions? OrderType;
 
-        [Prompt("\nWhat? {||}")]
+        [Prompt("\nWhat size prints would you like? {||}", ChoiceFormat = "{0}", ChoiceCase = CaseNormalization.Lower)]
         public SizeOptions? Size;
 
-        [Prompt("\nGreat, what's your {&}?")]
+        [Prompt("\nGreat, what's your five-digit {&}?")]
         public int Zipcode;
 
-        [Prompt("\nWe have several stores in your area, where would you like to pick up your prints? {||}")]
+        [Prompt("\nWe have several stores in your area, where would you like to pick up your prints? {||}", ChoiceFormat = "{0}")]
         public PickupStoreOptions? Store;
 
         public static IForm<PhotoOrder> BuildForm()
