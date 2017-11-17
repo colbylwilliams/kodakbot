@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{9C7E3A46-B60F-4052-9A21-DC8D1A942216}|">
+  <MonoDevelop.Ide.ItemProperties.KodakBot PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Sandwich.cs">
+    <Files>
+      <File FileName="Models/Sandwich.cs" Line="31" Column="5" />
+      <File FileName="Controllers/MessagesController.cs" Line="37" Column="25" NotebookId="1" />
+      <File FileName="Models/PhotoOrder.cs" Line="5" Column="19" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

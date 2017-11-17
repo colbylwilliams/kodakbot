@@ -8,14 +8,14 @@ using System.Net.Http;
 using System.Web.Http.Description;
 using System.Diagnostics;
 
-namespace Microsoft.Bot.Sample.FormBot
+namespace KodakBot
 {
     [BotAuthentication]
     public class MessagesController : ApiController
     {
-        internal static IDialog<SandwichOrder> MakeRootDialog()
+        internal static IDialog<PhotoOrder> MakeRootDialog()
         {
-            return Chain.From(() => FormDialog.FromForm(SandwichOrder.BuildForm));
+            return Chain.From(() => FormDialog.FromForm(PhotoOrder.BuildForm));
         }
 
         /// <summary>

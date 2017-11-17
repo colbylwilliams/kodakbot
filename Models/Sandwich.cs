@@ -7,7 +7,7 @@ using System.Collections.Generic;
 // The order of fields defines the default order in which questions will be asked.
 // Enumerations shows the legal options for each field in the SandwichOrder and the order is the order values will be presented 
 // in a conversation.
-namespace Microsoft.Bot.Sample.FormBot
+namespace KodakBot
 {
     public enum SandwichOptions
     {

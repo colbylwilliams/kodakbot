@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace SimpleEchoBot
+namespace KodakBot
 {
     public static class WebApiConfig
     {
