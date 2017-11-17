@@ -14,7 +14,7 @@ namespace KodakBot
     {
 
         [Prompt("\nWhat can I help you with? {||}", ChoiceFormat = "{0}", ChoiceCase = CaseNormalization.Lower)]
-        public OrderOptions? OrderType;
+        public OrderOptions? Order;
 
         [Prompt("\nWhat size prints would you like? {||}", ChoiceFormat = "{0}", ChoiceCase = CaseNormalization.Lower)]
         public SizeOptions? Size;
@@ -28,8 +28,12 @@ namespace KodakBot
         public static IForm<PhotoOrder> BuildForm()
         {
             return new FormBuilder<PhotoOrder>()
-                    //.Message("Welcome to the Kodak bot!")
-                    .Build();
+                .Message("Welcome to the Kodak bot!")
+                .Field(nameof(Order))
+                .Field(nameof(Size))
+                .Field(nameof(Zipcode))
+                .Field(nameof(Store))
+                .Build();
         }
     }
 }
